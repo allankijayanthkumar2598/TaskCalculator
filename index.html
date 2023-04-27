@@ -1,0 +1,68 @@
+<html>
+    <head>
+         <title>Calculator</title>
+        <link href="cal.css" rel="stylesheet"/>
+        
+          <script>
+              function ac(){
+             document.getElementById("display").value='';     
+          }
+
+          function de(){
+             document.getElementById("display").value='';     
+          }
+
+          function calculate(){
+            var ans= eval(document.getElementById("display").value);
+            document.getElementById("display").value=ans;
+
+          }
+         </script>  
+    </head>
+    <body>
+        <h1>SIMPLE CALCULATOR</h1>
+       
+         <div class="cal">
+            <div class="calbox">
+                <form>
+                    <div>
+                        <input id="display" type="text" placeholder="inputs" name="show">
+                    </div>
+                    
+                    <div>
+                        <input type="button" value="7" onclick="form.show.value+='7'">
+                        <input type="button" value="8" onclick="form.show.value+='8'">
+                        <input type="button" value="9" onclick="form.show.value+='9'">
+                        <input type="button" value="%" onclick="form.show.value+='%'">
+                        <input type="button" value="/" onclick="form.show.value+='/'">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="form.show.value+='4'">
+                        <input type="button" value="5" onclick="form.show.value+='5'">
+                        <input type="button" value="6" onclick="form.show.value+='6'">
+                        <input type="button" value="*" onclick="form.show.value+='*'">
+                        <input type="button" value="-" onclick="form.show.value+='-'">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="form.show.value+='1'">
+                        <input type="button" value="2" onclick="form.show.value+='2'">
+                        <input type="button" value="3" onclick="form.show.value+='3'">
+                        <input type="button" value="+" onclick="form.show.value+='+'">
+                        <input type="button" value="=" onclick="calculate()">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="ac()">
+                        <input type="button" value="0" onclick="form.show.value+='0'">
+                        <input type="button" value="00" onclick="form.show.value+='00'">
+                        <input type="button" value="." onclick="form.show.value+='.'">
+                        <input type="button" value="DEL" onclick="de()">
+                        
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div> 
+    </body>
+</html>

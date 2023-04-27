@@ -1,0 +1,43 @@
+body{
+    /* background-color:fuchsia; */
+    background-image:url("https://i.ibb.co/286nJYN/images-cal.jpg");
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: brown;
+}
+#display{
+    height: 20px;
+    width: 100%;
+    box-shadow: none;
+    background-color: whitesmoke;
+
+}
+.cal{
+    height: 365px;
+    width: 30%;
+    /* border: 1px solid grey; */
+    background-color:darkgray;
+    margin-top: 8%;
+    margin-left: 35%;
+    display: flex;
+
+}
+.calbox input{
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+    padding: 30px;
+    margin-left: 1.2px;
+    margin-top: 3px;
+    box-shadow: 2px 2px 2px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.calbox input:hover{
+    background-color: bisque;
+}
+
